@@ -1,0 +1,310 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+ "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+
+<!-- 外部スタイルシートの読み込み -->
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+
+<!-- 文字コードの設定 -->
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<!-- 基準スタイルシート言語の設定 -->
+<meta http-equiv="Content-Style-Type" content="text/css">
+<!-- 基準スクリプト言語の設定 -->
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+<!-- タイトル -->
+<title>え～でるのHP</title>
+
+<style type="text/css">
+<!--
+
+table.schedule-table {
+	width:			100%;
+	margin-top:		20px;
+	margin-bottom:		20px;
+	border-collapse:	collapse;
+}
+
+.date-field, .event-field, .note-field {
+	padding:	10px;
+	border:		1px solid gray;
+	text-align:	center;
+}
+
+.date-field {
+	width:	20%;
+}
+
+.event-field {
+	width:	50%;
+}
+
+.note-field {
+	width:	30%;
+}
+
+-->
+</style>
+
+<!-- Image Switcherの読み込み -->
+<script type="text/javascript" src="../js/imgswitcher.js"></script>
+
+<script type="text/javascript">
+<!--
+
+/*	Image Switcherの設定	*/
+var imgsw = new ImgSwitcher();
+imgsw.rgst("menu-icon1", "../image/menu-about.png", "../image/menu-about-b.png");
+imgsw.rgst("menu-icon2", "../image/menu-members.png", "../image/menu-members-b.png");
+imgsw.rgst("menu-icon3", "../image/menu-schedule.png", "../image/menu-schedule-b.png");
+imgsw.rgst("menu-icon4", "../image/menu-report.png", "../image/menu-report-b.png");
+imgsw.rgst("menu-icon5", "../image/menu-bbs.png", "../image/menu-bbs-b.png");
+imgsw.rgst("menu-icon6", "../image/menu-scores.png", "../image/menu-scores-b.png");
+imgsw.rgst("menu-icon7", "../image/menu-links.png", "../image/menu-links-b.png");
+
+// -->
+</script>
+
+</head>
+
+<body>
+
+<!-- 領域分割テーブル -->
+<table class="partition-table">
+
+<!-- 最上領域 -->
+<tr><td class="partition-table-cell" colspan="2">
+
+	<!-- タイトル -->
+	<div id="title"><a href="../index.html"><img src="../image/title.png" width="587" height="70"></a></div>
+
+</td></tr>
+
+<!-- サブタイトル領域 -->
+<tr><td class="partition-table-cell" colspan="2">
+
+	<!-- サブタイトル -->
+	<div id="subtitle" class="band"><img src="../image/subtitle.png" width="556" height="22"></div>
+
+</td></tr>
+
+<tr>
+
+<!-- メニュー領域 -->
+<td class="partition-table-cell" rowspan="2" valign="top">
+
+	<!-- メニューフレーム -->
+	<table id="menu-frame">
+	
+	<!-- メニューフレーム見出し -->
+	<tr><td id="menu-frame-heading"><img src="../image/heading-menu.png" width="168" height="35"></td></tr>
+	
+	<!-- メニューフレーム本体 -->
+	<tr><td id="menu-frame-body">
+	
+	<div class="menu-icon">
+		<a href="../about.html">
+		<img name="menu-icon1" onmouseover="imgsw.sw(this, 1);" onmouseout="imgsw.sw(this, 0);" src="../image/menu-about.png">
+		</a>
+	</div>
+	<div class="menu-icon">
+		<a href="../members/index.html">
+		<img name="menu-icon2" onmouseover="imgsw.sw(this, 1);" onmouseout="imgsw.sw(this, 0);" src="../image/menu-members.png">
+		</a>
+	</div>
+	<div class="menu-icon">
+		<a href="../schedule/new.html">
+		<img name="menu-icon3" onmouseover="imgsw.sw(this, 1);" onmouseout="imgsw.sw(this, 0);" src="../image/menu-schedule.png">
+		</a>
+	</div>
+	<div class="menu-icon">
+		<a href="http://geocities.yahoo.co.jp/gl/edel_jazz/">
+		<img name="menu-icon4" onmouseover="imgsw.sw(this, 1);" onmouseout="imgsw.sw(this, 0);" src="../image/menu-report.png">
+		</a>
+	</div>
+	<div class="menu-icon">
+		<a href="http://www2.rocketbbs.com/420/edel.html">
+		<img name="menu-icon5" onmouseover="imgsw.sw(this, 1);" onmouseout="imgsw.sw(this, 0);" src="../image/menu-bbs.png">
+		</a>
+	</div>
+	<div class="menu-icon">
+		<a href="../links.html">
+		<img name="menu-icon7" onmouseover="imgsw.sw(this, 1);" onmouseout="imgsw.sw(this, 0);" src="../image/menu-links.png">
+		</a>
+	</div>
+	
+	</td></tr>
+	
+	</table>
+
+</td>
+
+<!-- コンテンツ領域 -->
+<td class="partition-table-cell">
+
+	<!-- コンテンツ領域分割テーブル -->
+	<table class="partition-table">
+	
+	<!-- コンテンツ領域 -->
+	<tr><td class="partition-table-cell">
+	
+		<!-- コンテンツフレーム -->
+		<table class="content-frame">
+		
+		<!-- コンテンツフレーム見出し -->
+		<tr><td class="content-frame-heading"><img src="../image/heading-schedule.png" width="584" height="35"></td></tr>
+		
+		<!-- コンテンツフレーム本体 -->
+		<tr><td class="content-frame-body">
+		
+		<div class="subheading">2011年度活動予定</div>
+		
+		<table class="schedule-table">
+			<tr>
+				<th class="date-field">日程</th>
+				<th class="event-field">イベント名＠場所</th>
+				<th class="note-field">備考</th>
+			</tr>
+			<tr>
+				<td class="date-field">02/26（土）</td>
+				<td class="event-field">JAZZの日<br>＠八事ポップコーン</td>
+				<td class="note-field">18時演奏開始予定</td>
+			</tr>
+			<tr>
+				<td class="date-field">03/29(火) - 04/02(土）</td>
+				<td class="event-field">春合宿＠中津川研修センター</td>
+				<td class="note-field">-</td>
+			</tr>
+			<tr>
+				<td class="date-field">04/06（水）<br>04/13（水）</td>
+				<td class="event-field">新歓演奏会＠山の上練習場</td>
+				<td class="note-field">17:30　名大駅2番出口(地上)集合</td>
+			</tr>
+			<tr>
+				<td class="date-field">-</td>
+				<td class="event-field">Yamano Big Band Jazz Contest予選</td>
+				<td class="note-field">録音審査</td>
+			</tr>
+
+			<tr>
+				<td class="date-field">06/04(土)</td>
+				<td class="event-field">名大祭＠名古屋大学/豊田講堂前/特設ステージ</td>
+				<td class="note-field">14～15時<br>（ビッグバンド）</div></td>
+			</tr>
+			<tr>
+				<td class="date-field">06/05(日)</td>
+				<td class="event-field">名大祭<br>＠名古屋大学/学生会館</td>
+				<td class="note-field">10～16時<br>（コンボ・ビッグバンド）</div></td>
+			</tr>
+			<tr>
+				<td class="date-field">06/11(土)<br>06/12(日)</td>
+				<td class="event-field">Be Happy Jazz Festival<br>    ＠パティオ池鯉鮒</td>
+				<td class="note-field">11日　公開クリニック・交流演奏会<br>12日　演奏（11:10～11:35）</td>
+			</tr>
+                         <tr>
+				<td class="date-field">08/13(土)<br>08/14(日)</td>
+				<td class="event-field">Yamano Big Band Jazz Contest<br>＠大宮ソニックシティ</td>
+				<td class="note-field">2日目　2番</td>
+			</tr>
+
+			
+
+			<tr>
+				<td class="date-field">08/19（金）-25（木）</td>
+				<td class="event-field">夏合宿＠リバーサイドやまや</td>
+				<td class="note-field">-</td>
+</tr>
+			<tr>
+				<td class="date-field">09/02（金）</td>
+				<td class="event-field">夏コン＠今池ガスビル</td>
+				<td class="note-field">Open:17:30<br>Start:18:00<br>前売り・当日\500 </td>
+			</tr>
+                         <tr>
+				<td class="date-field">09/23（金）</td>
+				<td class="event-field">JAZZの日<br>＠八事ポップコーン</td>
+				<td class="note-field">17時演奏開始予定</td>
+			</tr>
+			<tr>
+			
+				<td class="date-field">10/10（月）</td>
+				<td class="event-field">Joint Concert＠アートピアホール</td>
+				<td class="note-field">-</td>
+			</tr>
+
+			<tr>
+				
+				<td class="date-field">11/05（土）</td>
+				<td class="event-field">川澄祭＠名古屋市立大学</td>
+				<td class="note-field">-</td>
+			</tr>
+
+			<tr>
+				
+				<td class="date-field">11/19（土）</td>
+				<td class="event-field">東海大会＠北文化小劇場</td>
+				<td class="note-field">-</td>
+			</tr>
+
+			<tr>
+				
+				<td class="date-field">11/27（日）</td>
+				<td class="event-field">対バンvs愛知大学 Blue Stars J.O.＠ピアチェーレ</td>
+				<td class="note-field">-</td>
+			</tr>
+
+			<tr>
+				
+				<td class="date-field">12/10(土)</td>
+				<td class="event-field">対バンvs愛知学院大学 Singing All Stars＠Sunny Side</td>
+				<td class="note-field">18時開場　19時開演</td>
+			</tr>
+
+			<tr>
+				
+				<td class="date-field">2012/<br>01/15（日）</td>
+				<td class="event-field">第46回定期演奏会＠アートピアホール</td>
+				<td class="note-field">-</td>
+			</tr>
+		</table>
+		
+		<br>
+		
+		<div class="subheading">過去の活動予定</div>
+		
+		<ul>
+                <li><a href="2010.html">2010年度</a>
+		<li><a href="2009.html">2009年度</a>
+		<li><a href="2008.html">2008年度</a>
+		<li><a href="2007.html">2007年度</a>
+		<li><a href="2006.html">2006年度</a>
+		<li><a href="2006.html">2005年度</a>
+		</ul>
+		
+		</td></tr>
+		
+		</table>
+	
+	</td></tr>
+	
+	</table>
+
+</td>
+
+</tr>
+
+<!-- 著作権表示領域 -->
+<tr><td class="partition-table-cell">
+
+	<!-- 著作権表示 -->
+	<div id="copyright" class="band">COPYRIGHT(C) 2010 Edel R&ouml;te All Rights Reserved.</div>
+
+</td></tr>
+
+</table>
+
+</body>
+
+</html>
