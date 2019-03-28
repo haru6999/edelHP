@@ -7,13 +7,27 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="shortcut icon" href="../image/erjo.png" type="image/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $("#header").load("../headerfooter/header.html");
+        $("#footer").load("../headerfooter/footer.html");
+      })
+    </script>
+
+    <!-- font awesome　の使用 -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   </head>
   <body>
     <div class="wrap">
-
-
+      <div class="spTopImage">
+        <a href="../index.html">
+          <img src="../image/logo.png">
+        </a>
+      </div>
+      <div id="header"></div>
       <main class="main">
-        <img src="../image/2018Top.jpg" class="topImage">
+        <img src="../image/2018links.jpg" class="topImage">
         <h2 class="topText">Link</h2>
 
         <div class="linkD band">
@@ -170,6 +184,8 @@
         </p>
         <div class="back"><p><a href="../index.html">戻る</a></p></div>
       </main>
+      <div id=footer></div>
     </div>
+    <script src="js/top.js"></script>
   </body>
 </html>

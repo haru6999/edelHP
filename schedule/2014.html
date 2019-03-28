@@ -4,295 +4,124 @@
 <html>
 
 <head>
-
-<!-- ŠO•”ƒXƒ^ƒCƒ‹ƒV[ƒg‚Ì“Ç‚Ýž‚Ý -->
+  <!-- æ–‡å­—åŒ–ã‘é˜²æ­¢ -->
+  <meta charset = "UTF-8" />
+  <!-- ã‚¢ã‚¤ã‚³ãƒ³ -->
+  <link rel="shortcut icon" href="../image/erjo.png" type="image/png">
+<!-- å¤–éƒ¨ã‚¹ã‚¿ã‚¤ãƒ«ã‚·ãƒ¼ãƒˆã®èª­ã¿è¾¼ã¿ -->
 <link rel="stylesheet" type="text/css" href="../css/common.css">
 
-<!-- •¶ŽšƒR[ƒh‚ÌÝ’è -->
+<!-- æ–‡å­—ã‚³ãƒ¼ãƒ‰ã®è¨­å®š -->
 <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
-<!-- Šî€ƒXƒ^ƒCƒ‹ƒV[ƒgŒ¾Œê‚ÌÝ’è -->
+<!-- åŸºæº–ã‚¹ã‚¿ã‚¤ãƒ«ã‚·ãƒ¼ãƒˆè¨€èªžã®è¨­å®š -->
 <meta http-equiv="Content-Style-Type" content="text/css">
-<!-- Šî€ƒXƒNƒŠƒvƒgŒ¾Œê‚ÌÝ’è -->
+<!-- åŸºæº–ã‚¹ã‚¯ãƒªãƒ—ãƒˆè¨€èªžã®è¨­å®š -->
 <meta http-equiv="Content-Script-Type" content="text/javascript">
 
-<!-- ƒ^ƒCƒgƒ‹ -->
-<title>‚¦`‚Å‚é‚ÌHP</title>
-
-<style type="text/css">
-<!--
-
-table.schedule-table {
-	width:			100%;
-	margin-top:		20px;
-	margin-bottom:		20px;
-	border-collapse:	collapse;
-}
-
-.date-field, .event-field, .note-field {
-	padding:	10px;
-	border:		1px solid gray;
-	text-align:	center;
-}
-
-.date-field {
-	width:	20%;
-}
-
-.event-field {
-	width:	50%;
-}
-
-.note-field {
-	width:	30%;
-}
-
--->
-</style>
-
-<!-- Image Switcher‚Ì“Ç‚Ýž‚Ý -->
-<script type="text/javascript" src="../js/imgswitcher.js"></script>
-
-<script type="text/javascript">
-<!--
-
-/*	Image Switcher‚ÌÝ’è	*/
-var imgsw = new ImgSwitcher();
-imgsw.rgst("menu-icon1", "../image/menu-about.png", "../image/menu-about-b.png");
-imgsw.rgst("menu-icon2", "../image/menu-members.png", "../image/menu-members-b.png");
-imgsw.rgst("menu-icon3", "../image/menu-schedule.png", "../image/menu-schedule-b.png");
-imgsw.rgst("menu-icon4", "../image/menu-report.png", "../image/menu-report-b.png");
-imgsw.rgst("menu-icon5", "../image/menu-bbs.png", "../image/menu-bbs-b.png");
-imgsw.rgst("menu-icon6", "../image/menu-scores.png", "../image/menu-scores-b.png");
-imgsw.rgst("menu-icon7", "../image/menu-links.png", "../image/menu-links-b.png");
-
-// -->
-</script>
+<!-- ã‚¿ã‚¤ãƒˆãƒ« -->
+<title>ãˆï½žã§ã‚‹ã®HP</title>
 
 </head>
 
 <body>
 
-<!-- —Ìˆæ•ªŠ„ƒe[ƒuƒ‹ -->
-<table class="partition-table">
+		<!-- ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ãƒ•ãƒ¬ãƒ¼ãƒ æœ¬ä½“ -->
+		<div class="subheading">2014å¹´åº¦æ´»å‹•äºˆå®š</div>
 
-<!-- Åã—Ìˆæ -->
-<tr><td class="partition-table-cell" colspan="2">
-
-	<!-- ƒ^ƒCƒgƒ‹ -->
-	<div id="title"><a href="../index.html"><img src="../image/title.png" width="587" height="70"></a></div>
-
-</td></tr>
-
-<!-- ƒTƒuƒ^ƒCƒgƒ‹—Ìˆæ -->
-<tr><td class="partition-table-cell" colspan="2">
-
-	<!-- ƒTƒuƒ^ƒCƒgƒ‹ -->
-	<div id="subtitle" class="band"><img src="../image/subtitle.png" width="556" height="22"></div>
-
-</td></tr>
-
-<tr>
-
-<!-- ƒƒjƒ…[—Ìˆæ -->
-<td class="partition-table-cell" rowspan="2" valign="top">
-
-	<!-- ƒƒjƒ…[ƒtƒŒ[ƒ€ -->
-	<table id="menu-frame">
-	
-	<!-- ƒƒjƒ…[ƒtƒŒ[ƒ€Œ©o‚µ -->
-	<tr><td id="menu-frame-heading"><img src="../image/heading-menu.png" width="168" height="35"></td></tr>
-	
-	<!-- ƒƒjƒ…[ƒtƒŒ[ƒ€–{‘Ì -->
-	<tr><td id="menu-frame-body">
-	
-	<div class="menu-icon">
-		<a href="../about.html">
-		<img name="menu-icon1" onmouseover="imgsw.sw(this, 1);" onmouseout="imgsw.sw(this, 0);" src="../image/menu-about.png">
-		</a>
-	</div>
-	<div class="menu-icon">
-		<a href="../members/index.html">
-		<img name="menu-icon2" onmouseover="imgsw.sw(this, 1);" onmouseout="imgsw.sw(this, 0);" src="../image/menu-members.png">
-		</a>
-	</div>
-	<div class="menu-icon">
-		<a href="../schedule/new.html">
-		<img name="menu-icon3" onmouseover="imgsw.sw(this, 1);" onmouseout="imgsw.sw(this, 0);" src="../image/menu-schedule.png">
-		</a>
-	</div>
-	<div class="menu-icon">
-		<a href="http://ameblo.jp/edel-jazz/" target="_blank">
-		<img name="menu-icon4" onmouseover="imgsw.sw(this, 1);" onmouseout="imgsw.sw(this, 0);" src="../image/menu-report.png">
-		</a>
-	</div>
-	<div class="menu-icon">
-		<a href="http://www2.rocketbbs.com/420/edel.html" target="_blank">
-		<img name="menu-icon5" onmouseover="imgsw.sw(this, 1);" onmouseout="imgsw.sw(this, 0);" src="../image/menu-bbs.png">
-		</a>
-	</div>
-	<div class="menu-icon">
-		<a href="../links.html">
-		<img name="menu-icon7" onmouseover="imgsw.sw(this, 1);" onmouseout="imgsw.sw(this, 0);" src="../image/menu-links.png">
-		</a>
-	</div>
-	
-	</td></tr>
-	
-	</table>
-
-</td>
-
-<!-- ƒRƒ“ƒeƒ“ƒc—Ìˆæ -->
-<td class="partition-table-cell">
-
-	<!-- ƒRƒ“ƒeƒ“ƒc—Ìˆæ•ªŠ„ƒe[ƒuƒ‹ -->
-	<table class="partition-table">
-	
-	<!-- ƒRƒ“ƒeƒ“ƒc—Ìˆæ -->
-	<tr><td class="partition-table-cell">
-	
-		<!-- ƒRƒ“ƒeƒ“ƒcƒtƒŒ[ƒ€ -->
-		<table class="content-frame">
-		
-		<!-- ƒRƒ“ƒeƒ“ƒcƒtƒŒ[ƒ€Œ©o‚µ -->
-		<tr><td class="content-frame-heading"><img src="../image/heading-schedule.png" width="584" height="35"></td></tr>
-		
-		<!-- ƒRƒ“ƒeƒ“ƒcƒtƒŒ[ƒ€–{‘Ì -->
-		<tr><td class="content-frame-body">
-		
-		<div class="subheading">2014”N“xŠˆ“®—\’è</div>
-		
 		<table class="schedule-table">
 			<tr>
-				<th class="date-field">“ú’ö</th>
-				<th class="event-field">ƒCƒxƒ“ƒg–¼—êŠ</th>
-				<th class="note-field">”õl</th>
+				<th class="date-field">æ—¥ç¨‹</th>
+				<th class="event-field">ã‚¤ãƒ™ãƒ³ãƒˆåï¼ å ´æ‰€</th>
+				<th class="note-field">å‚™è€ƒ</th>
 			</tr>
 			<tr>
-				<td class="date-field">2/22(“y)</td>
-				<td class="event-field">jazz‚Ì“ú<br>@”ªŽ–ƒ|ƒbƒvƒR[ƒ“</td>
-				<td class="note-field">17:00ŠJŽn—\’è<br>2ƒhƒŠƒ“ƒN \1000</td>
+				<td class="date-field">2/22(åœŸ)</td>
+				<td class="event-field">jazzã®æ—¥<br>@å…«äº‹ãƒãƒƒãƒ—ã‚³ãƒ¼ãƒ³</td>
+				<td class="note-field">17:00é–‹å§‹äºˆå®š<br>2ãƒ‰ãƒªãƒ³ã‚¯ \1000</td>
 			</tr>
 			<tr>
-				<td class="date-field">3/25(‰Î) -<br>3/29(“y)</td>
-				<td class="event-field">t‡h<br>@’†’ÃìŒ¤CƒZƒ“ƒ^[</td>
+				<td class="date-field">3/25(ç«) -<br>3/29(åœŸ)</td>
+				<td class="event-field">æ˜¥åˆå®¿<br>@ä¸­æ´¥å·ç ”ä¿®ã‚»ãƒ³ã‚¿ãƒ¼</td>
 				<td class="note-field">-</td>
 			</tr>
 			<tr>
-				<td class="date-field">4/9(…)<br>4/16(…)</td>
-				<td class="event-field"><a href="../shinkan14.html">VŠ½‰‰‘t‰ï<br>@ŽR‚Ìã—ûKê</a></td>
-				<td class="note-field">17:30ŠJ‰‰</td>
+				<td class="date-field">4/9(æ°´)<br>4/16(æ°´)</td>
+				<td class="event-field"><a href="../shinkan14.html">æ–°æ­“æ¼”å¥ä¼š<br>@å±±ã®ä¸Šç·´ç¿’å ´</a></td>
+				<td class="note-field">17:30é–‹æ¼”</td>
 			</tr>
 			<tr>
-				<td class="date-field">4/20(“ú)</td>
-				<td class="event-field">Jazz Line<br>@‚¨‘äêƒVƒ“ƒ{ƒ‹ƒvƒƒ€ƒi[ƒh</td>
-				<td class="note-field">ƒG[ƒfƒ‹‚Í12:50`<br>‘äê‰wŽŠ‹ß‚ÌƒXƒJƒp[IƒXƒe[ƒW‚Å‰‰‘t‚µ‚Ü‚·</td>
+				<td class="date-field">4/20(æ—¥)</td>
+				<td class="event-field">Jazz Line<br>@ãŠå°å ´ã‚·ãƒ³ãƒœãƒ«ãƒ—ãƒ­ãƒ ãƒŠãƒ¼ãƒ‰</td>
+				<td class="note-field">ã‚¨ãƒ¼ãƒ‡ãƒ«ã¯12:50ï½ž<br>å°å ´é§…è‡³è¿‘ã®ã‚¹ã‚«ãƒ‘ãƒ¼ï¼ã‚¹ãƒ†ãƒ¼ã‚¸ã§æ¼”å¥ã—ã¾ã™</td>
 			</tr>
 			<tr>
-				<td class="date-field">4/27(“ú)</td>
-				<td class="event-field">’z`Õ<br>@–¼ŒÃ‰®`ƒK[ƒfƒ“‚Ó“ª‚Â‚Ç‚¢‚ÌLê</td>
-				<td class="note-field">14:05‰‰‘tŠJŽn—\’è</td>
+				<td class="date-field">4/27(æ—¥)</td>
+				<td class="event-field">ç¯‰æ¸¯ç¥­<br>@åå¤å±‹æ¸¯ã‚¬ãƒ¼ãƒ‡ãƒ³ãµé ­ã¤ã©ã„ã®åºƒå ´</td>
+				<td class="note-field">14:05æ¼”å¥é–‹å§‹äºˆå®š</td>
 			</tr>
 			<tr>
-				<td class="date-field">5/11(“ú)</td>
-				<td class="event-field">YANMANO BIG BAND JAZZ CONTEST<br>¼“ú–{—\‘I<br>@ƒLƒƒƒbƒgƒ~ƒ…[ƒWƒbƒNƒJƒŒƒbƒWê–åŠwZ</td>
-				<td class="note-field">”ñŒöŠJ</td>
+				<td class="date-field">5/11(æ—¥)</td>
+				<td class="event-field">YANMANO BIG BAND JAZZ CONTEST<br>è¥¿æ—¥æœ¬äºˆé¸<br>@ã‚­ãƒ£ãƒƒãƒˆãƒŸãƒ¥ãƒ¼ã‚¸ãƒƒã‚¯ã‚«ãƒ¬ãƒƒã‚¸å°‚é–€å­¦æ ¡</td>
+				<td class="note-field">éžå…¬é–‹</td>
 			</tr>
 			<tr>
-				<td class="date-field">6/7(“y)</td>
-				<td class="event-field">–¼‘åÕ<br>@–L“cu“°‘O“ÁÝƒXƒe[ƒW</td>
-				<td class="note-field">10:00ŠJ‰‰</td>
+				<td class="date-field">6/7(åœŸ)</td>
+				<td class="event-field">åå¤§ç¥­<br>@è±Šç”°è¬›å ‚å‰ç‰¹è¨­ã‚¹ãƒ†ãƒ¼ã‚¸</td>
+				<td class="note-field">10:00é–‹æ¼”</td>
 			</tr>
 			<tr>
-				<td class="date-field">6/7(“y)<br>6/8(“ú)</td>
-				<td class="event-field">Be Happy Jazz Festival<br>@ƒpƒeƒBƒI’rŒï•©</td>
-				<td class="note-field">‚¦[‚Å‚é‚Í16:20‰‰‘tŠJŽn</td>
+				<td class="date-field">6/7(åœŸ)<br>6/8(æ—¥)</td>
+				<td class="event-field">Be Happy Jazz Festival<br>@ãƒ‘ãƒ†ã‚£ã‚ªæ± é¯‰é®’</td>
+				<td class="note-field">ãˆãƒ¼ã§ã‚‹ã¯16:20æ¼”å¥é–‹å§‹</td>
 			</tr>
 			<tr>
-				<td class="date-field">8/16(“y)<br>8/17(“ú)</td>
-				<td class="event-field">YAMANO BIG BAND JAZZ CONTEST<br>@‘å‹{ƒ\ƒjƒbƒNƒVƒeƒB</td>
-				<td class="note-field">‚¦[‚Å‚é‚Í1“ú–Ú5”Ô–Ú‚Ì‰‰‘t</td>
+				<td class="date-field">8/16(åœŸ)<br>8/17(æ—¥)</td>
+				<td class="event-field">YAMANO BIG BAND JAZZ CONTEST<br>@å¤§å®®ã‚½ãƒ‹ãƒƒã‚¯ã‚·ãƒ†ã‚£</td>
+				<td class="note-field">ãˆãƒ¼ã§ã‚‹ã¯1æ—¥ç›®5ç•ªç›®ã®æ¼”å¥</td>
 			</tr>
 			<tr>
-				<td class="date-field">8/18(ŒŽ) -<br>8/24(“ú)</td>
-				<td class="event-field">‰Ä‡h<br>@ƒŠƒo[ƒTƒCƒhYAMAYA</td>
+				<td class="date-field">8/18(æœˆ) -<br>8/24(æ—¥)</td>
+				<td class="event-field">å¤åˆå®¿<br>@ãƒªãƒãƒ¼ã‚µã‚¤ãƒ‰YAMAYA</td>
 				<td class="note-field">-</td>
 			</tr>
 			<tr>
-				<td class="date-field">9/6(“y)</td>
-				<td class="event-field">Summer Concert 2014<br>@–¼“Œ•¶‰»¬Œ€ê</td>
-				<td class="note-field">ŠJê17:30 ŠJ‰‰18:00<br>‘O”„E“–“ú\500</td>
+				<td class="date-field">9/6(åœŸ)</td>
+				<td class="event-field">Summer Concert 2014<br>@åæ±æ–‡åŒ–å°åŠ‡å ´</td>
+				<td class="note-field">é–‹å ´17:30 é–‹æ¼”18:00<br>å‰å£²ãƒ»å½“æ—¥\500</td>
 			</tr>
 			<tr>
-				<td class="date-field">9/20(“y)</td>
-				<td class="event-field">jazz‚Ì“ú<br>@”ªŽ–ƒ|ƒbƒvƒR[ƒ“</td>
-				<td class="note-field">18:00ŠJŽn—\’è<br>2ƒhƒŠƒ“ƒN \1000</td>
+				<td class="date-field">9/20(åœŸ)</td>
+				<td class="event-field">jazzã®æ—¥<br>@å…«äº‹ãƒãƒƒãƒ—ã‚³ãƒ¼ãƒ³</td>
+				<td class="note-field">18:00é–‹å§‹äºˆå®š<br>2ãƒ‰ãƒªãƒ³ã‚¯ \1000</td>
 			</tr>
 			<tr>
-				<td class="date-field">10/13(ŒŽEj)</td>
-				<td class="event-field">Joint Live<br>@ˆ¤’mŒ§Œ|pŒ€ê¬ƒz[ƒ‹</td>
-				<td class="note-field">ŠJê14:30 ŠJ‰‰15:00<br>ˆê”Ê</br>‘O”„\800 “–“ú\1000<br>‚Z¶ˆÈ‰º<br>‘O”„\500 “–“ú\800</td>
+				<td class="date-field">10/13(æœˆãƒ»ç¥)</td>
+				<td class="event-field">Joint Live<br>@æ„›çŸ¥çœŒèŠ¸è¡“åŠ‡å ´å°ãƒ›ãƒ¼ãƒ«</td>
+				<td class="note-field">é–‹å ´14:30 é–‹æ¼”15:00<br>ä¸€èˆ¬</br>å‰å£²\800 å½“æ—¥\1000<br>é«˜æ ¡ç”Ÿä»¥ä¸‹<br>å‰å£²\500 å½“æ—¥\800</td>
 			</tr>
 			<tr>
-				<td class="date-field">10/18(“y)</td>
-				<td class="event-field">Big Band Batle 2014<br>vs ˆ¤’mi“¿‘åŠw B&B Orchestra<br>@•½jƒTƒj[ƒTƒCƒh</td>
-				<td class="note-field">ŠJê18:00 ŠJ‰‰18:30<br>“üê—¿\2000</br>(ˆùHƒrƒ…ƒbƒtƒF•t)</td>
+				<td class="date-field">10/18(åœŸ)</td>
+				<td class="event-field">Big Band Batle 2014<br>vs æ„›çŸ¥æ·‘å¾³å¤§å­¦ Bï¼†B Orchestra<br>@å¹³é‡ã‚µãƒ‹ãƒ¼ã‚µã‚¤ãƒ‰</td>
+				<td class="note-field">é–‹å ´18:00 é–‹æ¼”18:30<br>å…¥å ´æ–™\2000</br>(é£²é£Ÿãƒ“ãƒ¥ãƒƒãƒ•ã‚§ä»˜)</td>
 			</tr>
 			<tr>
-				<td class="date-field">11/16(“ú)</td>
-				<td class="event-field">“ŒŠCBig Band Jazz Contest<br>@’†“dƒz[ƒ‹</td>
-				<td class="note-field">‚¦[‚Å‚é‚Í4”Ô–Ú</br>14:25 ‚©‚ç‚Ì‰‰‘t</td>
+				<td class="date-field">11/16(æ—¥)</td>
+				<td class="event-field">æ±æµ·Big Band Jazz Contest<br>@ä¸­é›»ãƒ›ãƒ¼ãƒ«</td>
+				<td class="note-field">ãˆãƒ¼ã§ã‚‹ã¯4ç•ªç›®</br>14:25é ƒã‹ã‚‰ã®æ¼”å¥</td>
 			</tr>
 			<tr>
-				<td class="date-field">12/6(“y)</td>
-				<td class="event-field">‘Îƒoƒ“</br>vs‘åã‘åŠwThe New Wave Jazz Orchestra<br>@“¿d8BALL TATTOO</td>
-				<td class="note-field">ŠJê18:00 ŠJ‰‰18:30</br>ƒ`ƒƒ[ƒW\1000</br>(•Ê“r1ƒhƒŠƒ“ƒN)</td>
+				<td class="date-field">12/6(åœŸ)</td>
+				<td class="event-field">å¯¾ãƒãƒ³</br>vså¤§é˜ªå¤§å­¦The New Wave Jazz Orchestra<br>@å¾³é‡8BALL TATTOO</td>
+				<td class="note-field">é–‹å ´18:00 é–‹æ¼”18:30</br>ãƒãƒ£ãƒ¼ã‚¸\1000</br>(åˆ¥é€”1ãƒ‰ãƒªãƒ³ã‚¯)</td>
 			</tr>
 			<tr>
-				<td class="date-field">1/10(“y)</td>
-				<td class="event-field">‘æ49‰ñ’èŠú‰‰‘t‰ï<br>@ƒEƒBƒ‹‚ ‚¢‚¿</td>
-				<td class="note-field">ŠJê17:30 ŠJ‰‰18:00</br>“üê–³—¿</td>
+				<td class="date-field">1/10(åœŸ)</td>
+				<td class="event-field">ç¬¬49å›žå®šæœŸæ¼”å¥ä¼š<br>@ã‚¦ã‚£ãƒ«ã‚ã„ã¡</td>
+				<td class="note-field">é–‹å ´17:30 é–‹æ¼”18:00</br>å…¥å ´ç„¡æ–™</td>
 			</tr>
 		</table>
-		
-		<br>
-		
-		<div class="subheading">‰ß‹Ž‚ÌŠˆ“®—\’è</div>
-		
-		<ul>
-		<li><a href="2013.html">2013”N“x</a>
-       @@@@ <li><a href="2012.html">2012”N“x</a>
-      @@@@  <li><a href="2011.html">2011”N“x</a>
-		<li><a href="2010.html">2010”N“x</a>
-		<li><a href="2009.html">2009”N“x</a>
-		<li><a href="2008.html">2008”N“x</a>
-		<li><a href="2007.html">2007”N“x</a>
-		<li><a href="2006.html">2006”N“x</a>
-		<li><a href="2006.html">2005”N“x</a>
-		</ul>
-		
-		</td></tr>
-		
-		</table>
-	
-	</td></tr>
-	
-	</table>
-
-</td>
-
-</tr>
-
-<!-- ’˜ìŒ •\Ž¦—Ìˆæ -->
-<tr><td class="partition-table-cell">
-
-	<!-- ’˜ìŒ •\Ž¦ -->
-	<div id="copyright" class="band">COPYRIGHT(C) 2010 Edel R&ouml;te All Rights Reserved.</div>
-
-</td></tr>
-
-</table>
-
+	<p><a href="./schedule.html">Back</a></p>
 </body>
 
 </html>
+<!-- text below generated by geocities.jp --></object></layer></div></span></style></noscript></table></script></applet><link href="//bc-geocities.yahoo.co.jp/js/sq.css" rel="stylesheet" type="text/css"><script language="javascript">var jps=382116062;var jpt=1553404489</script><script language="javascript" src="//bc-geocities.yahoo.co.jp/js/sq.js"></script><script language="javascript" src="//bc-geocities.yahoo.co.jp/js/geov2.js"></script><script language="javascript">geovisit();</script>

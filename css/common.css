@@ -79,6 +79,24 @@ td.content-frame-body {
 	/*color: rgb(131, 0, 9);*/
 	font-size: 15px;
 }
+
+.schedule-table{
+	border-collapse: collapse;
+}
+.schedule-table tr{
+	height: 80px;
+}
+.schedule-table th{
+	padding: 10px 0px 10px 0px !important;
+	height: 40px !important;
+}
+.schedule-table td{
+	padding: 0px 30px 0px 30px;
+	border: solid 1px #eab735;
+}
+.date-field{
+	text-align: center;
+}
 /*	メニューアイコン	*/
 div.menu-icon {
 	margin-bottom:	15px;

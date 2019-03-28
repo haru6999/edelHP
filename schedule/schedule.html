@@ -7,11 +7,26 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="shortcut icon" href="../image/erjo.png" type="image/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $("#header").load("../headerfooter/header.html");
+        $("#footer").load("../headerfooter/footer.html");
+      })
+    </script>
+    <!-- font awesome　の使用 -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   </head>
   <body>
     <div class="wrap">
+      <div class="spTopImage">
+        <a href="../index.html">
+          <img src="../image/logo.png">
+        </a>
+      </div>
+      <div id="header"></div>
       <main class="main">
-        <img src="../image/2018Top.jpg" class="topImage">
+        <img src="../image/2018sche.jpg" class="topImage">
         <div class="newSche">
           <h2 class="topText">Schedule</h2>
           <table class="scheT">
@@ -101,13 +116,11 @@
           <p class="schePast"><a href="2011.html">2011年度</a></p>
           <p class="schePast"><a href="2010.html">2010年度</a></p>
           <p class="schePast"><a href="2009.html">2009年度</a></p>
-          <p class="schePast"><a href="2008.html">2008年度</a></p>
-          <p class="schePast"><a href="2007.html">2007年度</a></p>
-          <p class="schePast"><a href="2006.html">2006年度</a></p>
-          <p class="schePast"><a href="2005.html">2005年度</a></p>
         </div>
         <div class="back"><p><a href="../index.html">戻る</a></p></div>
       </main>
+      <div id=footer></div>
     </div>
+    <script src="js/top.js"></script>
   </body>
 </html>
