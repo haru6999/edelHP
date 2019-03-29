@@ -17,16 +17,17 @@ header{
   margin: 0px 10%;
   position: relative;
   background:rgba(255,255,255,1);
-  padding-top: 20px;
+  padding-top: 10px;
   height: auto;
 }
-.pcTopLogo{
+.logo{
   text-align:center;
-  width: 50%;
-  margin-left: 25%;
+  width: 100%;
+  background-color: rgba(255,255,255,1);
+  padding-top: 12px;
 }
-.pcTopLogo img{
-  width: 25%;
+.logo img{
+  width: 13%;
 }
 .headerUl{
   list-style: none;
@@ -36,7 +37,7 @@ header{
 .headerLi{
   display: inline-block;
   margin: 0;
-  padding:20px 0px;
+  padding:10px 0px;
   width: 19%;
   /*font-family : Athelas;*/
   font-size : 20px;
@@ -51,7 +52,7 @@ header{
 }
 
 .main{
-  padding-top: 170px;
+  padding-top: 142px;
   margin: 0px 10%;
 }
 .topImage{
@@ -167,9 +168,6 @@ header{
   font-size: 5em;
   color : rgb(131, 0, 9);
 }
-.icon img{
-  height: 80px;
-}
 .icon p{
   /*font-family : Athelas;*/
   font-size : 16px;
@@ -188,17 +186,17 @@ header{
 .iconData{
 width: 100%;
 }
-.member{
+.facebook{
+  float: left;
+  width: calc(100% / 3);
+  text-align: center;
+}
+.twitter{
   float: left;
   width: calc(100% / 3);
   text-align: center;
 }
 .youtube{
-  float: left;
-  width: calc(100% / 3);
-  text-align: center;
-}
-.report{
   float: left;
   width: calc(100% / 3);
   text-align: center;
@@ -359,11 +357,15 @@ footer{
   color : rgb(35, 24, 21);
 }
 
+/*タブレット向け*/
+@media screen and (max-width: 1024px){
+  .footerUl{
+    margin: 0 20%;
+  }
+}
+
 /* pc画面向け*/
 @media screen and (min-width:480px) {
-  .spTopImage{
-    display:none;
-  }
   #nav-drawer {
     display:none;
   }
@@ -374,20 +376,37 @@ footer{
 
   .main{
     margin:0 15px;
-    padding-top: 15px;
+    padding-top: 60px;
   }
   .header__inner{
     display:none;
   }
+  .logo{
+    text-align:center;
+    background-color:#e6e6e6;
+    padding-top: 0px;
+    width: 80%;
+    height: 5px;
+    float: right;
+    position: relative;
+    top: -6px;
+    left: -10%;
+  }
+  .logo img{
+    width: 20%;
+  }
   header {
     padding:15px;
     background: #e6e6e6;
+    width: auto;
   }
   .headerUl{
     margin-top: 30px;
   }
   .headerLi{
     display: block;
+    width: auto;
+    text-align: left;
   }
   .spTopImage{
     text-align:center;
