@@ -27,7 +27,7 @@ header{
   padding-top: 12px;
 }
 .logo img{
-  width: 13%;
+  width: 10%;
 }
 .headerUl{
   list-style: none;
@@ -52,7 +52,7 @@ header{
 }
 
 .main{
-  padding-top: 200px;
+  padding-top: 143px;
   margin: 0px 10%;
 }
 .topImage{
@@ -311,9 +311,11 @@ footer{
   margin-left: 10%;
   margin: 0 auto;
   font-size: 20px;
+  border-bottom: solid 2px #c59339;
 }
 .kana{
   font-size: 12px !important;
+  border-bottom: none !important;
 }
 .introductionMessage{
   margin: 10px 12%;
